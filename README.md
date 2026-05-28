@@ -72,7 +72,7 @@ Grâce à ce pipeline complet, l'algorithme parvient à encercler la pièce et �
 
 ### Configuration de l'environnement (Windows)
 1. Créez un environnement virtuel Python :
-   ```cmd
+```cmd
    python -m venv venv
 
 ```
@@ -122,4 +122,3 @@ python -m src.calcul_metrique.metrique
 
 *Développé par Louis Chen, Michel Lin et Rayane Kachbi - Projet UE Image 2025/2026.*
 
-```
