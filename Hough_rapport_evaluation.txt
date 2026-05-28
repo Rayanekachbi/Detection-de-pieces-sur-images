@@ -1,0 +1,880 @@
+==================================================
+      RAPPORT D'ÉVALUATION DE LA MÉTRIQUE         
+==================================================
+===================================================
+         BILAN GLOBAL        
+===================================================
+Nombre d'images évaluées (N)   : 96
+Total pièces attendues          : 347
+Total pièces détectées par Hough: 728
+---------------------------------------------------
+MAE  (Erreur Absolue Moyenne)   : 6.53 pièces/image
+MSE  (Erreur Quadratique Moyenne): 403.55 (pièces)^2
+RMSE (Root Mean Squared Error)  : 20.09 pièces/image
+===================================================
+
+===================================================
+Analyse de l'image : piece_001.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_002.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_003.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_004.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 3
+-> Pièces détectées par l'algorithme : 3
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_005.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 13
+-> Écart (Erreur de comptage)         : +12
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_006.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 11
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : -5
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_007.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_008.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 7
+-> Pièces détectées par l'algorithme : 2
+-> Écart (Erreur de comptage)         : -5
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_009.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_010.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_011.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 2
+-> Écart (Erreur de comptage)         : -3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_012.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_013.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 3
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_014.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_015.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 80
+-> Écart (Erreur de comptage)         : +79
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_016.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -5
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_017.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 10
+-> Pièces détectées par l'algorithme : 9
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_018.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -5
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_019.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_020.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_021.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_022.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 18
+-> Pièces détectées par l'algorithme : 2
+-> Écart (Erreur de comptage)         : -16
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_023.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 8
+-> Pièces détectées par l'algorithme : 3
+-> Écart (Erreur de comptage)         : -5
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_024.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_025.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 57
+-> Écart (Erreur de comptage)         : +56
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_026.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 7
+-> Pièces détectées par l'algorithme : 9
+-> Écart (Erreur de comptage)         : +2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_027.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_028.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 12
+-> Pièces détectées par l'algorithme : 10
+-> Écart (Erreur de comptage)         : -2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_029.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_030.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_031.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 7
+-> Pièces détectées par l'algorithme : 28
+-> Écart (Erreur de comptage)         : +21
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_032.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 6
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_033.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 5
+-> Écart (Erreur de comptage)         : +4
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_034.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 2
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_035.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 6
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -6
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_036.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 4
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_037.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 2
+-> Pièces détectées par l'algorithme : 4
+-> Écart (Erreur de comptage)         : +2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_038.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_039.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 16
+-> Pièces détectées par l'algorithme : 32
+-> Écart (Erreur de comptage)         : +16
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_040.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 2
+-> Écart (Erreur de comptage)         : -3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_041.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_042.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 5
+-> Écart (Erreur de comptage)         : +4
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_043.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_044.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 6
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_045.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 7
+-> Écart (Erreur de comptage)         : +2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_046.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_047.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_048.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 3
+-> Pièces détectées par l'algorithme : 3
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_049.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 74
+-> Écart (Erreur de comptage)         : +73
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_050.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 11
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : -10
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_051.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 5
+-> Écart (Erreur de comptage)         : +4
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_052.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 5
+-> Écart (Erreur de comptage)         : +4
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_053.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_054.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_055.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_056.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 3
+-> Pièces détectées par l'algorithme : 2
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_057.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_058.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 7
+-> Écart (Erreur de comptage)         : +3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_059.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_060.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_061.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 7
+-> Pièces détectées par l'algorithme : 5
+-> Écart (Erreur de comptage)         : -2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_062.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_063.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 12
+-> Pièces détectées par l'algorithme : 9
+-> Écart (Erreur de comptage)         : -3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_064.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_065.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_066.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 15
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : -14
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_067.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 32
+-> Écart (Erreur de comptage)         : +31
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_068.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_069.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +5
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_070.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 6
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_071.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_072.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 8
+-> Pièces détectées par l'algorithme : 8
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_073.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 41
+-> Écart (Erreur de comptage)         : +37
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_074.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 5
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_075.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 3
+-> Écart (Erreur de comptage)         : +2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_076.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_077.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 2
+-> Écart (Erreur de comptage)         : -2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_078.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_079.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 9
+-> Pièces détectées par l'algorithme : 9
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_080.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_081.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 2
+-> Pièces détectées par l'algorithme : 2
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_082.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 2
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_083.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_084.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 2
+-> Pièces détectées par l'algorithme : 4
+-> Écart (Erreur de comptage)         : +2
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_085.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 6
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -6
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_086.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_087.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : -3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_088.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_089.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 5
+-> Pièces détectées par l'algorithme : 4
+-> Écart (Erreur de comptage)         : -1
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_090.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 6
+-> Pièces détectées par l'algorithme : 6
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_091.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : -3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_092.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 4
+-> Pièces détectées par l'algorithme : 0
+-> Écart (Erreur de comptage)         : -4
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_093.jpeg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 142
+-> Écart (Erreur de comptage)         : +141
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_094.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 6
+-> Pièces détectées par l'algorithme : 3
+-> Écart (Erreur de comptage)         : -3
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_095.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+---------------------------------------------------
+
+===================================================
+Analyse de l'image : piece_096.jpg
+Cohérence fichier OK (Correspondance validée avec imagePath).
+-> Pièces réelles (Vérité Terrain JSON) : 1
+-> Pièces détectées par l'algorithme : 1
+-> Écart (Erreur de comptage)         : +0
+
+
+
+
