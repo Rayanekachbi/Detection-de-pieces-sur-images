@@ -1,261 +1,122 @@
 # 🪙 Détection et Classification Automatique de Pièces de Monnaie
 
-![Python](https://img.shields.io/badge/Language-Python-blue?style=flat-square\&logo=python)
-![OpenCV](https://img.shields.io/badge/Library-OpenCV-green?style=flat-square\&logo=opencv)
+![Python](https://img.shields.io/badge/Language-Python-blue?style=flat-square&logo=python)
+![OpenCV](https://img.shields.io/badge/Library-OpenCV-green?style=flat-square&logo=opencv)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
 
-Ce projet de vision par ordinateur a pour but de localiser, segmenter et classifier des pièces de monnaie à partir d'images complexes. Il implémente et compare deux grandes approches de segmentation géométrique (**Transformée de Hough** vs **Algorithme Watershed**) avant de procéder à une classification de valeur basée sur une analyse colorimétrique avancée.
+Ce projet de vision par ordinateur a pour but de localiser et segmenter des pièces de monnaie à partir d'images complexes, avant d'en déduire leur valeur. L'objectif initial et le défi principal résident dans la **détection géométrique** parfaite des pièces.
 
 ![Résultat final de la détection et classification](img/resultat_valeurs.png)
 
 ---
 
-# 🎯 1. Constitution du Dataset & Vérité-Terrain
+## 📊 1. Bilan Quantitatif des Détections
 
-Afin de valider scientifiquement nos algorithmes, une méthodologie rigoureuse a été appliquée :
+L'objectif premier du projet étant la détection précise, voici d'emblée les résultats de notre évaluation menée sur un jeu de **96 images** (comportant **347 pièces** attendues au total). Nous avons comparé deux algorithmes majeurs : la Transformée de Hough et l'algorithme Watershed.
 
-* **Labellisation :** Utilisation de l'outil graphique **LabelMe** pour détourer manuellement chaque pièce (*vérité-terrain*).
-* **Format :** Exportation des coordonnées polygonales au format JSON.
-* **Structure :** Séparation stricte entre base de tests et base de validation.
+![Tableau récapitulatif des métriques globales](img/tableau_metriques.png)
+
+L'erreur quadratique (RMSE) de **Watershed** se révèle être **près de 8 fois plus faible** que celle de Hough. Il limite considérablement le sur-comptage et s'impose comme l'algorithme le plus fiable pour la suite du traitement.
+
+---
+
+## ⚙️ 2. Détection de Pièces : De la donnée aux algorithmes
+
+### A. Constitution du Dataset & Vérité-Terrain
+Pour pouvoir calculer les métriques présentées ci-dessus, une méthodologie rigoureuse a été appliquée :
+* **Labellisation :** Utilisation de l'outil graphique **LabelMe** pour détourer manuellement chaque pièce.
+* **Format :** Exportation des coordonnées des polygones au format JSON.
+* **Structure :** Séparation étanche du dataset en une base de tests et une base de validation.
 
 ![Interface de labellisation LabelMe](img/dataset_labelme.png)
 
----
+### B. Pipeline de Prétraitement
+Pour s'affranchir des variations d'éclairage et des ombres portées, l'image subit un pipeline de préparation avant la détection :
+1. Extraction du **canal L** de l'espace colorimétrique **HLS**.
+2. Égalisation adaptative (**CLAHE**) pour accentuer les contrastes locaux.
+3. Création d'un masque binaire délimitant la zone d'intérêt.
 
-# ⚙️ 2. Pipeline de Traitement d'Image et Extraction
-
-## 🔄 A. Prétraitement et Création des Masques
-
-Pour s'affranchir :
-
-* des variations d’éclairage,
-* des ombres portées,
-* des reflets métalliques,
-
-chaque image subit plusieurs traitements successifs afin d’isoler correctement les pièces.
-
-### Étapes appliquées
-
-1. Extraction du **canal L** de l’espace colorimétrique **HLS**
-2. Égalisation adaptative (**CLAHE**)
-3. Génération d’un masque binaire
-4. Isolation de la pièce sur fond noir
-
----
-
-## 🪙 Exemple : pièce bicolore (1€)
-
+**Exemple sur une pièce de 1€ :**
 ![Pipeline masque pièce 1 euro](img/pipeline_masque_1euro.png)
 
----
-
-## 🟠 Exemple : pièce cuivre
-
+**Exemple sur une pièce en cuivre :**
 ![Pipeline masque pièce cuivre](img/pipeline_masque_cuivre.png)
 
----
-
-## 🔍 B. Inférence & Détection des contours
-
-La détection des contours circulaires devient difficile lorsque :
-
-* le fond est texturé,
-* la pièce est tenue en main,
-* ou que des reflets perturbent la binarisation.
+### C. Comparaison des Algorithmes (Hough vs Watershed)
+Détecter des pièces sur des fonds complexes (comme la peau humaine) génère énormément de bruit lors de la binarisation :
 
 ![Limites et difficultés sur fond complexe](img/limites_fond_complexe.png)
 
----
-
-### 🟠 Transformée de Hough Circulaire
-
-Méthode basée sur :
-
-* un accumulateur de gradients,
-* la recherche géométrique de cercles.
-
-### Avantages
-
-* rapide
-* simple à implémenter
-
-### Inconvénients
-
-* très sensible au bruit
-* nombreux faux positifs
-* multi-détections fréquentes
-
----
-
-### 🔵 Algorithme Watershed
-
-Méthode basée sur :
-
-* une croissance de régions,
-* une transformation des distances,
-* un seuillage préalable.
-
-### Avantages
-
-* robuste sur les objets collés
-* meilleure stabilité géométrique
-* segmentation plus propre
-
-### Inconvénients
-
-* léger sous-comptage possible en faible contraste
-
----
-
-# 🥊 3. Analyse Comparative & Erreurs Graves
-
-L’évaluation a été menée sur :
-
-* **96 images**
-* **347 pièces attendues**
-
-L’un des constats majeurs du projet concerne l’instabilité importante de la Transformée de Hough sur les textures complexes.
-
-Dans de nombreux cas, Hough génère :
-
-* plusieurs dizaines de cercles parasites,
-* des artefacts de contours,
-* un fort sur-comptage.
-
-À l’inverse, Watershed parvient à isoler proprement les composantes connexes.
+Face à ce défi, nos deux approches ont réagi très différemment :
+* **Transformée de Hough Circulaire :** Très rapide mais ultra-sensible au bruit de texture. L'accumulateur de gradients s'affole sur les fonds complexes, créant de sévères artefacts de multi-détection.
+* **Algorithme Watershed (Ligne de partage des eaux) :** Approche par croissance de régions initiée par une transformation des distances. Extrêmement robuste, il réussit à isoler proprement une pièce unique même lorsque les contours sont flous.
 
 ![Comparatif des détections : Hough vs Watershed](img/comparaison_hough_watershed.png)
 
 ---
 
-# 📊 Bilan Analytique des Métriques
+## 🎨 3. Détection de la Valeur (Classification)
 
-L’erreur quadratique moyenne (**RMSE**) obtenue avec Watershed est :
+Une fois la phase critique de détection validée (via Watershed) et les pièces isolées sur fond noir, le projet procède à une classification de leur valeur en s'appuyant sur l'espace colorimétrique **HSV** :
+* **Pièces bicolores (1€, 2€) :** Génération de deux masques imbriqués (coeur central vs anneau externe). L'analyse de la **saturation (S)** différencie le métal doré (forte saturation) du métal argenté (faible saturation).
+* **Pièces unies (Cuivre vs Or) :** L'analyse de la **teinte (H)** permet de discriminer finement les nuances de rouge/brun du cuivre des nuances jaunes des alliages d'or nordique.
 
-# **près de 8 fois plus faible**
-
-que celle de la Transformée de Hough.
-
-Cela confirme clairement la supériorité de Watershed pour cette tâche de segmentation.
-
-![Tableau récapitulatif des métriques globales](img/tableau_metriques.png)
+![Classification et analyse de la teinte d'un individu en cuivre](img/classification_cuivre.png)
 
 ---
 
-# 🎨 4. Classification et Détection de la Valeur
+## 🚀 4. Installation & Exécution
 
-Une fois les pièces segmentées, la valeur est déterminée grâce à une analyse colorimétrique dans l’espace **HSV**.
+### Configuration de l'environnement (Windows)
+1. Créez un environnement virtuel Python :
+   ```cmd
+   python -m venv venv
 
----
-
-## 🪙 Pièces bicolores (1€ / 2€)
-
-Méthode utilisée :
-
-* création de deux masques imbriqués :
-
-  * cœur central
-  * anneau externe
-
-### Critère discriminant
-
-Analyse de la :
-
-```txt id="a7pf8x"
-Saturation (S)
 ```
 
-pour différencier :
-
-* métal doré → forte saturation
-* métal argenté → faible saturation
-
----
-
-## 🟠 Pièces unies (Cuivre / Or nordique)
-
-Méthode basée sur :
-
-```txt id="9w4kcp"
-Teinte (H)
-```
-
-afin de distinguer :
-
-* les nuances rouge/brun du cuivre,
-* des nuances jaunes des alliages dorés.
-
-![Classification et analyse HSV du cuivre](img/classification_cuivre.png)
-
----
-
-# 🚀 5. Installation & Exécution
-
-## 📋 Configuration de l’environnement (Windows)
-
-### 1. Création d’un environnement virtuel
-
-```cmd id="e7s8zq"
-python -m venv venv
-```
-
----
-
-### 2. Activation de l’environnement
-
-```cmd id="n3w8fz"
+2. Activez l'environnement :
+```cmd
 venv\Scripts\activate
+
 ```
 
----
 
-### 3. Installation des dépendances
-
-```cmd id="xtd5m4"
+3. Installez les dépendances requises :
+```cmd
 pip install -r requirements.txt
+
 ```
 
----
 
-# ▶️ Lancement des modules
 
-Exécutez les scripts depuis la racine du projet.
+### Lancement des modules
 
----
+Exécutez les scripts depuis la racine du projet :
 
-## 🔍 Détection de formes (Hough & Watershed)
-
-```cmd id="t0j8vn"
+* **Lancement de la détection de forme (Hough et Watershed) :**
+```cmd
 python -m src.main
+
 ```
 
----
 
-## 🪙 Classification des valeurs
-
-```cmd id="3k7xvw"
+* **Test de la classification de valeur :**
+```cmd
 python -m src.detection_valeur.Detection_valeur
+
 ```
 
----
 
-## 📊 Calcul des métriques
-
-```cmd id="c2vx8n"
+* **Calcul des métriques d'évaluation :**
+```cmd
 python -m src.calcul_metrique.metrique
+
 ```
 
----
 
-# 👥 Équipe Projet
-
-Développé par :
-
-* Louis Chen
-* Michel Lin
-* Rayane Kachbi
-
-Projet UE Image — 2025/2026.
 
 ---
 
+*Développé par Louis Chen, Michel Lin et Rayane Kachbi - Projet UE Image 2025/2026.*
+
+```
